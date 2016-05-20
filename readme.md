@@ -1,27 +1,54 @@
-# Laravel PHP Framework
+//----Acesso Gmail --
+email: melhoridadesa@gmail.com
+Senha: MelhorIdae2016
+//----Acesso Gmail --
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+//---Login no Facebook ---
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+---Acesso:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+usuario: melhoridadesa@gmail.com
+senha: mudarq1w2e3r4
 
-## Contributing
+---Acesso.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Para adicionar no arquivo .env
 
-## Security Vulnerabilities
+FACEBOOK_CLIENT_ID=276093516068374
+FACEBOOK_CLIENT_SECRET=25b5437bf8c16b2f497c6b07aa30d8db
+FACEBOOK_REDIRECT=http://portalidoso.com.br/facebook
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Caso necessario instalar os pacotes a seguir:
 
-## License
+apt-get install curl
+aptitude install php5-curl
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Alias (Arquivo: config/app.php): 'Socialite' => 'Laravel\Socialite\Facades\Socialite',
+Provider (Arquivo: config/app.php): 'Laravel\Socialite\SocialiteServiceProvider',
+
+
+Controller do Modulo Site
+
+<?php
+
+namespace Modules\Site\Http\Controllers;
+
+use Pingpong\Modules\Routing\Controller;
+
+class FacebookController extends Controller
+{
+	public function login()
+	{
+		return \Socialize::with('facebook')->redirect();
+	}
+	public function pageFacebook()
+	{
+		$user = \Socialize::with('facebook')->user();
+		return response()->json($user);
+	}
+}
+
+
+//--- Login no Facebook ---
