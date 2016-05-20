@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Celular extends Migration
+class Idoso extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,12 @@ class Celular extends Migration
      */
     public function up()
     {
-        Schema::create('menu', function (Blueprint $table) {
+        Schema::create('idoso', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->string('numero');
+            $table->int('idade');
+            $table->string('endereco');
+            $table->string('telefone');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class Celular extends Migration
      */
     public function down()
     {
-        Schema::drop('celular');
+        //
     }
 }
