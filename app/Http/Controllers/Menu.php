@@ -18,6 +18,6 @@ class Menu extends Controller
 
     public function obterMenu()
     {
-    	return view('menu', ['menus' => $this->menu->obterMenu()]);
+    	return view('site::index');
     }
 }

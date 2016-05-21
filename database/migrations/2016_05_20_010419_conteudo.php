@@ -16,7 +16,6 @@ class Conteudo extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('texto');
-            $table->timestamps('data');
             $table->string('usuario');
             $table->timestamps();
         });
