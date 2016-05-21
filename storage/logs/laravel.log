@@ -882,3 +882,48 @@ Stack trace:
 #100 /var/www/portalv3/server.php(21): ()
 #101 /var/www/portalv3/server.php(0): {main}()
 #102 {main}  
+[2016-05-20 23:52:04] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Laravel\Socialite\SocialiteServiceProvider' not found' in /var/www/portalv3/bootstrap/cache/compiled.php:7604
+Stack trace:
+#0 /var/www/portalv3/bootstrap/cache/compiled.php(2171): Symfony\Component\Debug\Exception\FatalErrorException->__construct()
+#1 /var/www/portalv3/bootstrap/cache/compiled.php(2166): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError()
+#2 /var/www/portalv3/bootstrap/cache/compiled.php(0): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#3 /var/www/portalv3/bootstrap/cache/compiled.php(7590): Illuminate\Foundation\ProviderRepository->createProvider()
+#4 /var/www/portalv3/bootstrap/cache/compiled.php(7566): Illuminate\Foundation\ProviderRepository->compileManifest()
+#5 /var/www/portalv3/bootstrap/cache/compiled.php(1789): Illuminate\Foundation\ProviderRepository->load()
+#6 /var/www/portalv3/bootstrap/cache/compiled.php(2205): Illuminate\Foundation\Application->registerConfiguredProviders()
+#7 /var/www/portalv3/bootstrap/cache/compiled.php(1653): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#8 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(219): Illuminate\Foundation\Application->bootstrapWith()
+#9 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(105): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 /var/www/portalv3/artisan(36): Illuminate\Foundation\Console\Kernel->handle()
+#11 /var/www/portalv3/artisan(0): {main}()
+#12 {main}  
+[2016-05-20 23:52:13] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Laravel\Socialite\SocialiteServiceProvider' not found' in /var/www/portalv3/bootstrap/cache/compiled.php:7604
+Stack trace:
+#0 /var/www/portalv3/bootstrap/cache/compiled.php(2171): Symfony\Component\Debug\Exception\FatalErrorException->__construct()
+#1 /var/www/portalv3/bootstrap/cache/compiled.php(2166): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError()
+#2 /var/www/portalv3/bootstrap/cache/compiled.php(0): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#3 /var/www/portalv3/bootstrap/cache/compiled.php(7590): Illuminate\Foundation\ProviderRepository->createProvider()
+#4 /var/www/portalv3/bootstrap/cache/compiled.php(7566): Illuminate\Foundation\ProviderRepository->compileManifest()
+#5 /var/www/portalv3/bootstrap/cache/compiled.php(1789): Illuminate\Foundation\ProviderRepository->load()
+#6 /var/www/portalv3/bootstrap/cache/compiled.php(2205): Illuminate\Foundation\Application->registerConfiguredProviders()
+#7 /var/www/portalv3/bootstrap/cache/compiled.php(1653): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#8 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(219): Illuminate\Foundation\Application->bootstrapWith()
+#9 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(105): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 /var/www/portalv3/artisan(36): Illuminate\Foundation\Console\Kernel->handle()
+#11 /var/www/portalv3/artisan(0): {main}()
+#12 {main}  
+[2016-05-20 23:53:51] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Laravel\Socialite\SocialiteServiceProvider' not found' in /var/www/portalv3/bootstrap/cache/compiled.php:7604
+Stack trace:
+#0 /var/www/portalv3/bootstrap/cache/compiled.php(2171): Symfony\Component\Debug\Exception\FatalErrorException->__construct()
+#1 /var/www/portalv3/bootstrap/cache/compiled.php(2166): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError()
+#2 /var/www/portalv3/bootstrap/cache/compiled.php(0): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#3 /var/www/portalv3/bootstrap/cache/compiled.php(7590): Illuminate\Foundation\ProviderRepository->createProvider()
+#4 /var/www/portalv3/bootstrap/cache/compiled.php(7566): Illuminate\Foundation\ProviderRepository->compileManifest()
+#5 /var/www/portalv3/bootstrap/cache/compiled.php(1789): Illuminate\Foundation\ProviderRepository->load()
+#6 /var/www/portalv3/bootstrap/cache/compiled.php(2205): Illuminate\Foundation\Application->registerConfiguredProviders()
+#7 /var/www/portalv3/bootstrap/cache/compiled.php(1653): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#8 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(219): Illuminate\Foundation\Application->bootstrapWith()
+#9 /var/www/portalv3/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(105): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 /var/www/portalv3/artisan(36): Illuminate\Foundation\Console\Kernel->handle()
+#11 /var/www/portalv3/artisan(0): {main}()
+#12 {main}  

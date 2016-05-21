@@ -1,4 +1,4 @@
-//----Acesso Gmail --
+/* ----Acesso Gmail --
 email: melhoridadesa@gmail.com
 Senha: MelhorIdae2016
 //----Acesso Gmail --
@@ -33,7 +33,7 @@ Controller do Modulo Site
 
 <?php
 
-namespace Modules\Site\Http\Controllers;
+/*namespace Modules\Site\Http\Controllers;
 
 use Pingpong\Modules\Routing\Controller;
 
@@ -51,4 +51,4 @@ class FacebookController extends Controller
 }
 
 
-//--- Login no Facebook ---
+//--- Login no Facebook --- */
