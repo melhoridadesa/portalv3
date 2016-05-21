@@ -29,6 +29,6 @@ class Idoso extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('idoso');
     }
 }

@@ -10,14 +10,14 @@
     <title>Gentallela Alela! | </title>
 
     @section('styles_vendors')
-    	<!-- Bootstrap  -->
-	    {!! Html::style('assets/admin/vendors/bootstrap/dist/css/bootstrap.min.css') !!}
-	    <!-- Font Awesome -->
-	    {!! Html::style('assets/admin/vendors/font-awesome/css/font-awesome.min.css') !!}
-	    <!-- jQuery custom content scroller -->
-	    {!! Html::style('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') !!}
-	    <!-- Custom Theme Style -->
-	    {!! Html::style('assets/admin/css/custom.css') !!}
+      <!-- Bootstrap  -->
+      {!! Html::style('assets/admin/vendors/bootstrap/dist/css/bootstrap.min.css') !!}
+      <!-- Font Awesome -->
+      {!! Html::style('assets/admin/vendors/font-awesome/css/font-awesome.min.css') !!}
+      <!-- jQuery custom content scroller -->
+      {!! Html::style('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') !!}
+      <!-- Custom Theme Style -->
+      {!! Html::style('assets/admin/css/custom.css') !!}
     @show
   </head>
 
@@ -52,7 +52,9 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/admin/cadastro-usuario">Cadastro</a>
+                      <li>
+                        <!--@include('menu')
+                        @show-->
                       </li>
                     </ul>
                   </li>
@@ -218,18 +220,18 @@
     </div>
 
     @section('vendor_scripts')
-   		<!-- jQuery -->
-	    {!! HTML::script('assets/admin/vendors/jquery/dist/jquery.min.js') !!}
-	    <!-- Bootstrap -->
-	    {!! HTML::script('assets/admin/vendors/bootstrap/dist/js/bootstrap.min.js') !!}
-	    <!-- FastClick -->
-	    {!! HTML::script('assets/admin/vendors/fastclick/lib/fastclick.js') !!}
-	    <!-- NProgress -->
-	    {!! HTML::script('assets/admin/vendors/nprogress/nprogress.js') !!}
-	    <!-- jQuery custom content scroller -->
-	    {!! HTML::script('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
-	    <!-- Custom Theme Scripts -->
-	    {!! HTML::script('assets/admin/js/custom.js') !!}
+      <!-- jQuery -->
+      {!! HTML::script('assets/admin/vendors/jquery/dist/jquery.min.js') !!}
+      <!-- Bootstrap -->
+      {!! HTML::script('assets/admin/vendors/bootstrap/dist/js/bootstrap.min.js') !!}
+      <!-- FastClick -->
+      {!! HTML::script('assets/admin/vendors/fastclick/lib/fastclick.js') !!}
+      <!-- NProgress -->
+      {!! HTML::script('assets/admin/vendors/nprogress/nprogress.js') !!}
+      <!-- jQuery custom content scroller -->
+      {!! HTML::script('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') !!}
+      <!-- Custom Theme Scripts -->
+      {!! HTML::script('assets/admin/js/custom.js') !!}
     @show
   </body>
 </html>

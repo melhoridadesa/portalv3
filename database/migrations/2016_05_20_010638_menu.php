@@ -16,7 +16,6 @@ class Menu extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('link');
-            $table->timestamps('tipo_acesso');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class Menu extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('menu');
     }
 }
