@@ -5,5 +5,5 @@ Route::group(['middleware' => 'web', 'prefix' => '/', 'namespace' => 'Modules\Si
 	Route::get('/', 'SiteController@index');
 	Route::get('/login-usuario', 'LoginController@login');
 	Route::get('loginFacebook', 'FacebookController@login');
-	Route::get('facebook', 'FacebookController@pageFacebook');
+	Route::get('facebook', 'FacebookController@pageFacebook'); 
 });
