@@ -53,8 +53,7 @@
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li>
-                        <!--@include('menu')
-                        @show-->
+                        @yield('menu')
                       </li>
                     </ul>
                   </li>
