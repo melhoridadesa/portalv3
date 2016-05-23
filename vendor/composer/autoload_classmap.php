@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Contato' => $baseDir . '/database/migrations/2016_05_20_005744_contato.php',
-    'Conteudo' => $baseDir . '/database/migrations/2016_05_20_010419_conteudo.php',
+    'Contato' => $baseDir . '/database/seeds/Contato.php',
+    'ContatoTB' => $baseDir . '/database/migrations/2016_05_20_005744_contatoTB.php',
+    'Conteudo' => $baseDir . '/database/seeds/Conteudo.php',
+    'ConteudoTB' => $baseDir . '/database/migrations/2016_05_20_010419_conteudoTB.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
@@ -82,9 +84,11 @@ return array(
     'Hamcrest\\Type\\IsString' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
     'Hamcrest\\Util' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
     'Hamcrest\\Xml\\HasXPath' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
-    'Idoso' => $baseDir . '/database/migrations/2016_05_20_011144_idoso.php',
+    'Idoso' => $baseDir . '/database/seeds/Idoso.php',
+    'IdosoTB' => $baseDir . '/database/migrations/2016_05_20_011144_idosoTB.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
-    'Menu' => $baseDir . '/database/migrations/2016_05_20_010638_menu.php',
+    'Menu' => $baseDir . '/database/seeds/Menu.php',
+    'MenuTB' => $baseDir . '/database/migrations/2016_05_20_010638_menuTB.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
     'PHPUnit_Extensions_PhptTestCase' => $vendorDir . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Menu extends Migration
+class IdosoTB extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,12 @@ class Menu extends Migration
      */
     public function up()
     {
-        Schema::create('menu', function (Blueprint $table) {
+        Schema::create('idoso', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titulo');
-            $table->string('link');
+            $table->string('nome');
+            $table->integer('idade');
+            $table->string('endereco');
+            $table->string('telefone');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class Menu extends Migration
      */
     public function down()
     {
-        Schema::drop('menu');
+        Schema::drop('idoso');
     }
 }
