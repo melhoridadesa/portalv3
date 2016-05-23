@@ -29,6 +29,6 @@ class Contato extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('contato');
     }
 }

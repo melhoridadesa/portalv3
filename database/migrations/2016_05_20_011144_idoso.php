@@ -15,7 +15,7 @@ class Idoso extends Migration
         Schema::create('idoso', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->int('idade');
+            $table->integer('idade');
             $table->string('endereco');
             $table->string('telefone');
             $table->timestamps();
@@ -29,6 +29,6 @@ class Idoso extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('idoso');
     }
 }

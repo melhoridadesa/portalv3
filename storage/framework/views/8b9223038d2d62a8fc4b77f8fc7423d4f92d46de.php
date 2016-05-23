@@ -10,17 +10,17 @@
     <title>Gentallela Alela! | </title>
 
     <?php $__env->startSection('styles_vendors'); ?>
-    	<!-- Bootstrap  -->
-	    <?php echo Html::style('assets/admin/vendors/bootstrap/dist/css/bootstrap.min.css'); ?>
+      <!-- Bootstrap  -->
+      <?php echo Html::style('assets/admin/vendors/bootstrap/dist/css/bootstrap.min.css'); ?>
 
-	    <!-- Font Awesome -->
-	    <?php echo Html::style('assets/admin/vendors/font-awesome/css/font-awesome.min.css'); ?>
+      <!-- Font Awesome -->
+      <?php echo Html::style('assets/admin/vendors/font-awesome/css/font-awesome.min.css'); ?>
 
-	    <!-- jQuery custom content scroller -->
-	    <?php echo Html::style('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css'); ?>
+      <!-- jQuery custom content scroller -->
+      <?php echo Html::style('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css'); ?>
 
-	    <!-- Custom Theme Style -->
-	    <?php echo Html::style('assets/admin/css/custom.css'); ?>
+      <!-- Custom Theme Style -->
+      <?php echo Html::style('assets/admin/css/custom.css'); ?>
 
     <?php echo $__env->yieldSection(); ?>
   </head>
@@ -57,7 +57,9 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/admin/cadastro-usuario">Cadastro</a>
+                      <li>
+                        <?php echo $__env->make('menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                        <?php echo $__env->yieldSection(); ?>
                       </li>
                     </ul>
                   </li>
@@ -227,23 +229,23 @@
     </div>
 
     <?php $__env->startSection('vendor_scripts'); ?>
-   		<!-- jQuery -->
-	    <?php echo HTML::script('assets/admin/vendors/jquery/dist/jquery.min.js'); ?>
+      <!-- jQuery -->
+      <?php echo HTML::script('assets/admin/vendors/jquery/dist/jquery.min.js'); ?>
 
-	    <!-- Bootstrap -->
-	    <?php echo HTML::script('assets/admin/vendors/bootstrap/dist/js/bootstrap.min.js'); ?>
+      <!-- Bootstrap -->
+      <?php echo HTML::script('assets/admin/vendors/bootstrap/dist/js/bootstrap.min.js'); ?>
 
-	    <!-- FastClick -->
-	    <?php echo HTML::script('assets/admin/vendors/fastclick/lib/fastclick.js'); ?>
+      <!-- FastClick -->
+      <?php echo HTML::script('assets/admin/vendors/fastclick/lib/fastclick.js'); ?>
 
-	    <!-- NProgress -->
-	    <?php echo HTML::script('assets/admin/vendors/nprogress/nprogress.js'); ?>
+      <!-- NProgress -->
+      <?php echo HTML::script('assets/admin/vendors/nprogress/nprogress.js'); ?>
 
-	    <!-- jQuery custom content scroller -->
-	    <?php echo HTML::script('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'); ?>
+      <!-- jQuery custom content scroller -->
+      <?php echo HTML::script('assets/admin/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'); ?>
 
-	    <!-- Custom Theme Scripts -->
-	    <?php echo HTML::script('assets/admin/js/custom.js'); ?>
+      <!-- Custom Theme Scripts -->
+      <?php echo HTML::script('assets/admin/js/custom.js'); ?>
 
     <?php echo $__env->yieldSection(); ?>
   </body>

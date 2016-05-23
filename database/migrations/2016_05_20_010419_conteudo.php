@@ -28,6 +28,6 @@ class Conteudo extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('conteudo');
     }
 }

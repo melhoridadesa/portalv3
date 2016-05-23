@@ -27,6 +27,6 @@ class Menu extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('menu');
     }
 }
