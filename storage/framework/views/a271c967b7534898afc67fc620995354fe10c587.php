@@ -47,6 +47,10 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <?php echo $__env->make('site::menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                    <li><a href="<?php echo e(url('/home')); ?>">Home</a></li>
+                    <li><a href="<?php echo e(url('/quem-somos')); ?>">Quem somos?</a></li>
+                    <li><a href="<?php echo e(url('/login')); ?>">Login</a></li>
+                    <li><a href="<?php echo e(url('/contato')); ?>">Contato</a></li>
                 </ul>
             </div>
         </div>

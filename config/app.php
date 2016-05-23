@@ -157,6 +157,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         'Pingpong\Modules\ModulesServiceProvider',
         Collective\Html\HtmlServiceProvider::class,
+        'Laravel\Socialite\SocialiteServiceProvider',
+
     ],
 
     /*
@@ -205,6 +207,7 @@ return [
         'Module' => 'Pingpong\Modules\Facades\Module',
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Socialize' => 'Laravel\Socialite\Facades\Socialite',
     ],
 
 ];
