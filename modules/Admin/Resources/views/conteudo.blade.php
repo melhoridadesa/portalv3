@@ -1,5 +1,5 @@
 @extends('admin::layouts.master')
 
 @section('conteudo')
-	FOI CHATO
+	{{ $default[1]['conteudo'][0]['texto'] }}
 @stop
