@@ -1,8 +1,8 @@
 <?php namespace Modules\Admin\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
+use Modules\Admin\Http\Controllers\BaseController;
 
-class UsuarioController extends Controller {
+class UsuarioController extends BaseController {
 	
 	public function cadastrar()
 	{

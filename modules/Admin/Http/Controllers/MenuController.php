@@ -1,20 +1,12 @@
 <?php namespace Modules\Admin\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
-use App\Menu as MenuBanco;
+use Modules\Admin\Http\Controllers\BaseController;
 
-class MenuController extends Controller {
-
-	protected $menu;
-
-	public function __construct(MenuBanco $menu)
-	{
-		$this->menu = $menu;
-	}
-	
+class MenuController extends BaseController
+{	
 	public function obterMenu()
 	{
-		return view('menu', ['menus' => $this->menu->obterMenu()]);
+		return view('admin::menu', ['menus' => $this->menu->obterMenu()]);
 	}
 	
 }

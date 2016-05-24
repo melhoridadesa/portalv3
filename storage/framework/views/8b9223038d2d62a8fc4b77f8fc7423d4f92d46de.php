@@ -43,8 +43,8 @@
 
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <span>Bem,</span>
+                <h2>Seu Idoso</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -57,9 +57,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li>
                         <?php echo $__env->yieldContent('menu'); ?>
-                      </li>
                     </ul>
                   </li>
                 </ul>

@@ -1,8 +1,8 @@
 <?php namespace Modules\Admin\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
+use Modules\Admin\Http\Controllers\BaseController;
 
-class AdminController extends Controller {
+class AdminController extends BaseController {
 	
 	public function index()
 	{
