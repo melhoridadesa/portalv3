@@ -6,7 +6,7 @@ class AdminController extends BaseController {
 	
 	public function index()
 	{
-		return view('admin::index');
+		return $this->setContent('admin::conteudo');
 	}
 	
 }

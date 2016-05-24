@@ -6,7 +6,7 @@ class ConteudoController extends BaseController
 {	
 	public function obterConteudo()
 	{
-		$this->setContent('admin::conteudo');
+		return $this->setContent('admin::conteudo');
 	}
 	
 }

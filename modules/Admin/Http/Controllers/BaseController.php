@@ -26,10 +26,10 @@ class BaseController extends Controller
         
         if (!is_null($this->layout))
         {
-            return $this->layout->nest('child', $view, $this->setDefaultParams($data));
+            return view($view, $this->setDefaultParams($data));
+        } else {
+            throw new \Exception("Layout nao definido", 1);
         }
-
-        return view($view, $this->setDefaultParams($data));
 
     }
 

@@ -4,7 +4,7 @@ Route::group(['middleware' => 'web', 'prefix' => 'admin', 'namespace' => 'Module
 {
 	Route::get('/', 'AdminController@index');
 	//Route::get('/', 'MenuController@obterMenu');	
-	Route::get('/', 'ConteudoController@obterConteudo');
+	//Route::get('/', 'ConteudoController@obterConteudo');
 	Route::get('/cadastro-usuario', 'UsuarioController@cadastrar');
 
 });
