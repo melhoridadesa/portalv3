@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Conteudo extends Seeder
+class Sconteudo extends Seeder
 {
 
     /**

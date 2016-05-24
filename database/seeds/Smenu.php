@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Menu extends Seeder
+class Smenu extends Seeder
 {
     /**
      * Run the database seeds.

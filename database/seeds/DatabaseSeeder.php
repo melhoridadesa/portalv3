@@ -12,9 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        $this->call(Conteudo::class);
-        $this->call(Menu::class);
-        $this->call(Usuario::class);
-        $this->call(Contato::class);
+        $this->call(Sconteudo::class);
+        $this->call(Smenu::class);
+        $this->call(Susuario::class);
+        $this->call(Scontato::class);
     }
 }

@@ -58,8 +58,7 @@
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li>
-                        <?php echo $__env->make('menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                        <?php echo $__env->yieldSection(); ?>
+                        <?php echo $__env->yieldContent('menu'); ?>
                       </li>
                     </ul>
                   </li>

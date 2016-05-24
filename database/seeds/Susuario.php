@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Contato extends Seeder
+class Susuario extends Seeder
 {
 
     /**
@@ -13,12 +13,12 @@ class Contato extends Seeder
     public function run()
     {
       $i = 0;
-      while($i<=5){
-      DB::table('contato')->insert([
-          'nome' => str_random(10),
+      while($i<=10){
+      DB::table('users')->insert([
+          'name' => str_random(10),
           'email' => str_random(10).'@gmail.com',
-          'assunto' => str_random(15),
-          'mensagem' => str_random(30),
+          'password' => bcrypt('secret'),
+          'tipo_acesso' => 'u',
       ]);
       $i++;
     }
