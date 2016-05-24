@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title> Melhor Idade </title>
 
     <?php $__env->startSection('styles_vendors'); ?>
       <!-- Bootstrap  -->
@@ -43,7 +43,7 @@
 
               </div>
               <div class="profile_info">
-                <span>Bem,</span>
+                <span>Bem Vindo,</span>
                 <h2>Seu Idoso</h2>
               </div>
             </div>
@@ -57,7 +57,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <?php echo $__env->yieldContent('menu'); ?>
+                        <?php echo $__env->make('admin::menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                     </ul>
                   </li>
                 </ul>
@@ -207,7 +207,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <?php echo $__env->yieldContent('content'); ?>
+                <?php echo $__env->yieldContent('conteudo'); ?>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title> Melhor Idade </title>
 
     @section('styles_vendors')
       <!-- Bootstrap  -->
@@ -38,7 +38,7 @@
                 {{ Html::image("assets/admin/images/img.jpg", 'Melhor idade', array('class' => 'img-circle profile_img')) }}
               </div>
               <div class="profile_info">
-                <span>Bem,</span>
+                <span>Bem Vindo,</span>
                 <h2>Seu Idoso</h2>
               </div>
             </div>
@@ -52,7 +52,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> usuario <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        @yield('menu')
+                        @include('admin::menu')
                     </ul>
                   </li>
                 </ul>
@@ -198,7 +198,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                @yield('content')
+                @yield('conteudo')
               </div>
             </div>
           </div>
