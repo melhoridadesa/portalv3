@@ -10,6 +10,6 @@ class Menu extends Model
 
     public function obterMenu()
     {
-    	return self::select()->get();
+    	return self::select()->where('tipo_acesso', 'a')->get();
     }
 }

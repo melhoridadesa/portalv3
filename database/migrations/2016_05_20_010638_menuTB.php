@@ -16,6 +16,7 @@ class MenuTB extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('link');
+            $table->string('tipo_acesso');
             $table->timestamps();
         });
     }
