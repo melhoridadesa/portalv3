@@ -35,7 +35,7 @@ class BaseController extends Controller
 
     protected function setDefaultParams($data)
     {
-    	$dataDefault['default'][]['menu'] = $this->menu->obterMenu()->toArray();
+    	$dataDefault['default'][]['menu'] = $this->menu->obterMenu('i')->toArray();
     	$dataDefault['default'][]['conteudo'] = $this->conteudo->obterConteudo()->toArray();
     	$data = (count($data) > 0 ? $data : []);
     	return array_merge($dataDefault , $data);
