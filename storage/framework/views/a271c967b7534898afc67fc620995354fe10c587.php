@@ -27,7 +27,7 @@
 <body id="app-layout">
     <?php echo $__env->make('site::menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     
-    <?php echo $__env->yieldContent('content'); ?>
+    <?php echo $__env->yieldContent('conteudo'); ?>
 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>

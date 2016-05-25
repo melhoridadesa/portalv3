@@ -1,25 +1,13 @@
-<?php 
-namespace Modules\Site\Http\Controllers;
+<?php namespace Modules\Site\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
-use Modules\Site\Http\Requests;
-use Modules\Site\Entities\Menu as MenuBanco;
+use Modules\Site\Http\Controllers\BaseController;
 
-class SiteController extends Controller {
-	
-	protected $menu;
-
-	public function __construct(MenuBanco $menu)
-	{
-		$this->menu = $menu;
-	}
+class SiteController extends BaseController {
 	
 	public function index()
 	{
-		return view('site::index', ['menus' => $this->menu->menu()]);
+		return $this->setContent('site::conteudo');
 	}
-
-
+	
 }
-
 

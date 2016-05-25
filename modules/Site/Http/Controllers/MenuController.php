@@ -1,20 +1,12 @@
-<?php 
-namespace Modules\Site\Http\Controllers;
-use Modules\Site\Entities\Menu as MenuBanco;
-use Pingpong\Modules\Routing\Controller;
+<?php namespace Modules\Site\Http\Controllers;
 
+use Modules\Site\Http\Controllers\BaseController;
 
-
-class MenuController extends Controller{
-	protected $menu;
-
-	public function __construct(MenuBanco $menu)
+class MenuController extends BaseController
+{	
+	public function obterMenu()
 	{
-		$this->menu = $menu;
+		return view('site::menu', ['menus' => $this->menu->obterMenu()]);
 	}
-
-    public function obterMenu()
-    {
-    	return view('site::menu', ['menus' => $this->menu->menu()]);
-    }
+	
 }
