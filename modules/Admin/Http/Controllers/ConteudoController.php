@@ -2,9 +2,9 @@
 
 use Modules\Admin\Http\Controllers\BaseController;
 
-class AdminController extends BaseController {
-	
-	public function index()
+class ConteudoController extends BaseController
+{	
+	public function obterConteudo()
 	{
 		return $this->setContent('admin::conteudo');
 	}
