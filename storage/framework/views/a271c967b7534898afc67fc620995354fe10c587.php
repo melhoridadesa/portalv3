@@ -25,33 +25,8 @@
     </style>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    Melhor Idade SA
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <?php echo $__env->make('site::menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <?php echo $__env->make('site::menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
     <?php echo $__env->yieldContent('content'); ?>
 
     <!-- JavaScripts -->
